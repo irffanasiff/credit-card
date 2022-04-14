@@ -1816,6 +1816,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/archivo@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/archivo/-/archivo-4.5.3.tgz#f20113d6f2068b7e9babdffb2ad2fbacfac6b390"
+  integrity sha512-20Rmo5Trt6BFF3RB06AZxCEaqUEoLnXupsb7azl8VZqNh3HiIyH2pGvdQ80Ewq+oaJw5HJMm2KD67jjLfDH/jA==
+
+"@fontsource/open-sans@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.6.tgz#20438c6b0b7772c371f784b4ede5c23a7605f1f3"
+  integrity sha512-bQuNS0H1VL1VLC6FwmReHlpJaICVe/seODU3Q9cpTQbJ5OtRD4TwWMrAjfTxqcFNollA6O0AlE4BnRSWMQLfvw==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -7886,6 +7896,11 @@ react-icons@^3.0.0:
   dependencies:
     camelcase "^5.0.0"
 
+react-intersection-observer@^8.33.1:
+  version "8.33.1"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.33.1.tgz#8e6442cac7052ed63056e191b7539e423e7d5c64"
+  integrity sha512-3v+qaJvp3D1MlGHyM+KISVg/CMhPiOlO6FgPHcluqHkx4YFCLuyXNlQ/LE6UkbODXlQcLOppfX6UMxCEkUhDLw==
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -8308,6 +8323,11 @@ schema-utils@^4.0.0:
     ajv "^8.8.0"
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
+
+scroll-snap@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/scroll-snap/-/scroll-snap-4.0.3.tgz#015ef1e2661249acfe99c673408a3710f74c7b3d"
+  integrity sha512-7am2JXqY/0jHN9+3b2zhZtm55NmzEQhZTXZBIdC/fVb6aVN5nonjbRpf+OghU9LhguJB+rq5ty9SmQcYzMvMxw==
 
 select-hose@^2.0.0:
   version "2.0.0"
