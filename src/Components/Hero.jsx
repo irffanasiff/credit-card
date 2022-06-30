@@ -11,14 +11,9 @@ import {
 
 const MotionBox = motion(Box);
 
-
 const Hero = () => {
   return (
-    <Container
-      maxW="full"
-      display={'flex'}
-      flexDirection="row"
-    >
+    <Container maxW="full" display={'flex'} flexDirection="row">
       <MotionBox
         zIndex="0"
         initial={{ opacity: 0 }}
@@ -26,7 +21,7 @@ const Hero = () => {
           opacity: 1,
           transition: { delay: 2, duration: 1 },
         }}
-        py={{ base: '18rem', md: '4rem' }}
+        // py={{ base: '18rem', md: '5rem' }}
         w={{ base: '8rem', md: '15rem', lg: '25rem' }}
         position={'absolute'}
         left="0"
@@ -67,7 +62,7 @@ const Hero = () => {
         alignItems="center"
         justifyContent="center"
         gap="4rem"
-        py={{ base: '5rem', md: '8rem', lg: '10rem' }}
+        py={{ base: '10rem', md: '8rem', lg: '10rem' }}
       >
         <MotionBox
           initial={{ opacity: 0, y: 40 }}
@@ -136,13 +131,14 @@ const Hero = () => {
           Request an invite
         </MotionBox>
       </Box>
+
       <MotionBox
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
           transition: { delay: 2, duration: 1 },
         }}
-        pt={{ base: '8rem', md: '8rem' }}
+        pt={{ base: '13rem', md: '8rem' }}
         w={{ base: '10rem', md: '15rem', lg: '25rem' }}
         position={'absolute'}
         right="0"

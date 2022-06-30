@@ -25,39 +25,48 @@ const CascadingCards = () => {
   });
 
   return (
-    <Container display={{ base: 'none', md: 'block' }} maxW="full">
+    <Container maxW="full">
       <Container
         mt="2rem"
         display="flex"
-        flexDir="row"
+        flexDir={{ base: 'column', md: 'row' }}
         justify="center"
         maxW="6xl"
         color="black"
         p="0"
       >
         <VStack
+          p="1rem"
           alignItems={'start'}
-          minW="3xl"
+          minW={{ base: 'auot', md: 'auto', lg: '3xl' }}
           overflowY={'scroll'}
+          overflowX={'hidden'}
           scrollBehavior="smooth"
           scrollSnapType="y mandatory"
+          gap={{ base: '4rem', md: '0' }}
         >
           <Center
             flexDir={'column'}
             scrollSnapAlign={'start'}
             alignItems="start"
-            maxW="6xl"
+            maxW={{ base: 'auto', md: '6xl' }}
             minH="42vw"
             textAlign="start"
           >
             <Heading
-              maxW="xl"
+              maxW={{ base: 'auto', md: '25rem' }}
               fontWeight="500"
               fontSize={{ base: 'lg', md: '2xl', lg: '4xl' }}
             >
               24/7 Intelligent Concierge
             </Heading>
-            <Text fontWeight={'400'} fontSize='md' py="2rem" textAlign={'start'} maxW="lg">
+            <Text
+              fontWeight={{ base: '300', md: '500' }}
+              fontSize={{ base: 'sm', md: 'lg' }}
+              py={{ base: '1rem', md: '2rem' }}
+              textAlign="start"
+              maxW={{ base: '90vw', md: '27rem' }}
+            >
               24/7 Concierge that doesn't suck. Fully human but completely
               digital with personalization based on your preference Key Points
               of offering
@@ -68,20 +77,24 @@ const CascadingCards = () => {
             flexDir={'column'}
             scrollSnapAlign={'start'}
             alignItems="start"
-            ml="auto"
-            minH="45vw"
-            m="3rem"
+            maxW={{ base: 'auto', md: '6xl' }}
+            minH="42vw"
             textAlign="start"
           >
             <Heading
-              ref={ref}
-              maxW="xl"
+              maxW={{ base: 'auto', md: '25rem' }}
               fontWeight="500"
-              fontSize={{ base: 'lg', md: '2xl', lg: '3xl' }}
+              fontSize={{ base: 'lg', md: '2xl', lg: '4xl' }}
             >
               Exclusive, Curated Rewards & Experiences
             </Heading>
-            <Text py="2rem">
+            <Text
+              fontWeight={{ base: '300', md: '500' }}
+              fontSize={{ base: 'sm', md: 'lg' }}
+              py={{ base: '1rem', md: '2rem' }}
+              textAlign="start"
+              maxW={{ base: '90vw', md: '27rem' }}
+            >
               Submerge into the luxury of lounge or get exclusive rewards
             </Text>
           </Center>
@@ -90,30 +103,34 @@ const CascadingCards = () => {
             flexDir={'column'}
             scrollSnapAlign={'start'}
             alignItems="start"
-            ml="auto"
+            maxW={{ base: 'auto', md: '6xl' }}
             minH="42vw"
-            m="3rem"
             textAlign="start"
           >
             <Heading
-              ref={ref}
-              maxW="xl"
+              maxW={{ base: 'auto', md: '25rem' }}
               fontWeight="500"
-              fontSize={{ base: 'lg', md: '2xl', lg: '3xl' }}
+              fontSize={{ base: 'lg', md: '2xl', lg: '4xl' }}
             >
               Exclusive, Curated Rewards & Experiences
             </Heading>
-            <Text py="2rem">
+            <Text
+              fontWeight={{ base: '300', md: '500' }}
+              fontSize={{ base: 'sm', md: 'lg' }}
+              py={{ base: '1rem', md: '2rem' }}
+              textAlign="start"
+              maxW={{ base: '90vw', md: '27rem' }}
+            >
               Submerge into the luxury of lounge or get exclusive rewards
             </Text>
           </Center>
         </VStack>
         <Box
+          display={{ base: 'none', md: 'flex' }}
           pt="0rem"
           pb="20rem"
           px="0"
           transition="all 0.5s ease-in-out"
-          display="flex"
           alignItems={entryAlign && entryAlign.isIntersecting ? 'end' : 'start'}
           w="18rem"
         >
@@ -127,7 +144,7 @@ const CascadingCards = () => {
             top="10rem"
             right="auto"
           >
-            <Phone entry={entry}/>
+            <Phone entry={entry} />
           </Center>
         </Box>
       </Container>

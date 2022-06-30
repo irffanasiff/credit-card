@@ -12,6 +12,7 @@ const theme = extendTheme({
     noire: {
       blue: '#469BFF',
       black: '#2E2E2E',
+      blackBg: '#171717',
       lightGray: '#b8b8b8',
       darkGray: '#828282',
     },
@@ -26,10 +27,6 @@ const theme = extendTheme({
         // fontFamily: 'sans',
         background: '#ffffff',
         color: '#2E2E2E',
-      },
-      html: {
-       // scrollSnapType: 'y mandatory',
-      //  overflowY: 'scroll',
       },
     },
   },
