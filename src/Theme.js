@@ -28,6 +28,15 @@ const theme = extendTheme({
         background: '#ffffff',
         color: '#2E2E2E',
       },
+      '&::-webkit-scrollbar': {
+        width: '0px',
+      },
+      '&::-webkit-scrollbar-track': {
+        width: '0px',
+      },
+      '&::-webkit-scrollbar-thumb': {
+        borderRadius: '0px',
+      },
     },
   },
 });

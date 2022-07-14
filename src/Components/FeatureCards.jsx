@@ -23,7 +23,6 @@ const variant = {
 const FeatureCards = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
-  console.log(inView);
   useEffect(() => {
     if (inView) {
       controls.start('visible');
@@ -84,7 +83,7 @@ const FeatureCards = () => {
           <HStack
             fontWeight="600"
             gap={{ base: '0.5rem', md: '1rem' }}
-            p="1rem"
+            p={{ base: '0.4rem', md: '1rem' }}
           >
             <Center w={{ base: '2.5rem', md: '4rem' }}>
               <img
@@ -99,7 +98,7 @@ const FeatureCards = () => {
           </HStack>
           <HStack
             fontWeight="600"
-            p="1rem"
+            p={{ base: '0.4rem', md: '1rem' }}
             gap={{ base: '0.5rem', md: '1rem' }}
           >
             <HStack>
@@ -116,7 +115,8 @@ const FeatureCards = () => {
               Concierge
             </Text>
           </HStack>
-          <HStack fontWeight="600" p="1rem" gap="0.5rem">
+
+          <HStack fontWeight="600" p="0rem 1rem" gap="0.5rem">
             <HStack>
               <Text fontSize={{ base: '5xl', md: '6xl' }}>2</Text>
               <Box
@@ -135,7 +135,7 @@ const FeatureCards = () => {
           <HStack
             fontWeight="400"
             gap={{ base: '0.5rem', md: '1rem' }}
-            p="1.2rem"
+            p="0.5rem 1.8rem"
           >
             <HStack>
               <Text fontSize={'6xl'}>₹</Text>

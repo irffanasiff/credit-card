@@ -144,7 +144,7 @@ const CascadingCards = () => {
             top="10rem"
             right="auto"
           >
-            <Phone entry={entry} />
+            <Phone entry={entryAlign} />
           </Center>
         </Box>
       </Container>

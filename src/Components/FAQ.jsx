@@ -5,10 +5,10 @@ import {
   AccordionPanel,
   Heading,
   Container,
-  Text,
   Box,
 } from '@chakra-ui/react';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+
 const data = [
   {
     question:
@@ -61,11 +61,15 @@ const Faq = () => {
       <Accordion allowMultiple mx="auto" maxW="3xl">
         {data &&
           data.map((faq, index) => (
-            <AccordionItem my="1rem" border="0" key={index}>
+            <AccordionItem my="1rem" key={index}>
               {({ isExpanded }) => (
                 <>
                   <h2>
-                    <AccordionButton>
+                    <AccordionButton
+                      display="flex"
+                      alignItems={'center'}
+                      justifyContent="space-between"
+                    >
                       <Box
                         fontWeight={'500'}
                         fontSize={{ base: 'sm', md: 'lg' }}
